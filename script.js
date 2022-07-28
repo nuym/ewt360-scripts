@@ -2,7 +2,7 @@
 // @name            e网通多合一脚本
 // @name:en         ewt360-scripts
 // @namespace       https://github.com/nuym/ewt360-scripts
-// @version         1.0.62
+// @version         1.1.0
 // @description     e网通多合一脚本
 // @description:en  it can hook the timer speed to change.
 // @require         https://greasyfork.org/scripts/372672-everything-hook/code/Everything-Hook.js?version=881251
@@ -21,9 +21,9 @@
  var int=window.setInterval(function(){
     var cX = $("div[class='earnest_check_mask_box']");
     cX.click();
-},10000);
+},100);
 'use strict';
-setTimeout(function(){var cX = $("div[id='replaybtn']:visible").click();}, 1000);
+setTimeout(function(){var cX = $("div[id='replaybtn']:visible").click();}, 100);
 
  document.addEventListener('readystatechange', function () {
      if (document.readyState === "interactive" || document.readyState === "complete") {
@@ -50,7 +50,7 @@ setTimeout(function(){var cX = $("div[id='replaybtn']:visible").click();}, 1000)
                      '    <div class="_th-item _item-x-2">&lt;</div>\n' +
                      '    <div class="_th-item _item-xx2">&gt;&gt;</div>\n' +
                      '    <div class="_th-item _item-xx-2">&lt;&lt;</div>\n' +
-                     '    <div class="_th-item _item-reset">原速播放</div>\n' +
+                     '    <div class="_th-item _item-reset">原速</div>\n' +
                      '</div>\n' +
                      '<div class="_th_cover-all-show-times _th_hidden">\n' +
                      '    <div class="_th_times">x' + displayNum + '</div>\n' +
@@ -706,5 +706,5 @@ setTimeout(function(){var cX = $("div[id='replaybtn']:visible").click();}, 1000)
              console.log('[e网通多合一脚本] 保持登录失败，原因：' + result.msg);
          }
      }, 5500);
-
  }(window);
+
