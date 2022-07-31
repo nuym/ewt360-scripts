@@ -2,13 +2,13 @@
 // @name            e网通多合一脚本
 // @name:en         ewt360-scripts
 // @namespace       https://github.com/nuym/ewt360-scripts
-// @version         1.1.0
+// @version         1.0.62
 // @description     e网通多合一脚本
 // @description:en  it can hook the timer speed to change.
 // @require         https://greasyfork.org/scripts/372672-everything-hook/code/Everything-Hook.js?version=881251
 // @require         https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js
 // @author          nuym
-// @match           http*://*.ewt360.com/*
+// @match           http*://web.ewt360.com/site-study/*
 // @run-at          document-start
 // @icon		https://github.githubassets.com/pinned-octocat.svg
 // @grant           none
